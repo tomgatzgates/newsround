@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>News</h1>
+
+<ul>
+  <% @news.each do |news| %>
+    <li>
+      <h2><%= news.headline %></h2>
+      <p><%= news.summary %></p>
+
+      <% if news.sources.any? %>
+        <ul class="sources">
+          <% news.sources.each do |source| %>
+            <li><li><%= link_to source.publication.name, source.url %></li></li>
+          <% end %>
+        </ul>
+      <% end %>
+
+      <ul class="actions">
+        <li><%= link_to 'Show', news %></li>
+        <li><%= link_to 'Edit', edit_news_path(news) %></li>
+        <li>
+          <%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </li>
+      </ul>
+    </li>
+  <% end %>
+</ul>
+
+<br>
+
+<%= link_to 'New News', new_news_path %>

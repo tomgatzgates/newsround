@@ -1,0 +1,20 @@
+// Place all the styles related to the news controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.sources {
+  background-color: #eee;
+  border-color: #ddd;
+  padding: 10px;
+  li {
+    width: 33.33%;
+  }
+}
+
+.actions {
+  margin-bottom: 2rem;
+
+  li {
+    display: inline-block;
+  }
+}
