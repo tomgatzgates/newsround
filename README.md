@@ -1,24 +1,10 @@
-# README
+# Newsround (needs new name)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An app to collect a variety of sources for each headline to give a balanced view of each story.
 
-Things you may want to cover:
+The purpose is to make it easier to form a well rounded opinion of the headlines irrelevant of your party of political standing. 
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Disclaimer
+Newsround supports the great work by journalists and will always link directly to the original source.
+Only small snippets, those that appear in common sharing links or headline summaries may be used.
