@@ -1,4 +1,9 @@
 <p id="notice"><%= notice %></p>
+<h1 class="publication-name">
+  <%= @publication.name %>
+  <span>(<%= @publication.political_stance %>)</span>
+</h1>
+
 
 <%= link_to 'Edit', edit_publication_path(@publication) %> |
 <%= link_to 'Back', publications_path %>

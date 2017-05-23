@@ -1,0 +1,8 @@
+<%= f.label :url %>
+<%= f.text_field :url %>
+
+<%= f.label :political_stance %>
+<%= f.text_area :political_stance %>
+
+<%= f.label :publication %>
+<%= f.select :publication, options_from_collection_for_select(Publication.all, :id, :name) %>

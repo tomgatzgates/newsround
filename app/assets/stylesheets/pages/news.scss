@@ -4,11 +4,10 @@
 
 .sources {
   background-color: #eee;
-  border-color: #ddd;
+  border: solid 1px #ddd;
   padding: 10px;
-  li {
-    width: 33.33%;
-  }
+  margin: 10px 0;
+  border-radius: 3px;
 }
 
 .actions {

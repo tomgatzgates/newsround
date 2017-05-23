@@ -17,6 +17,13 @@
   <%= f.label :summary %>
   <%= f.text_area :summary %>
 
+  <strong>Sources</strong>
+  <ul class="sources">
+    <%= f.fields_for :sources do |sources_form| %>
+      <%= render partial: 'sources/fields', locals: { f: sources_form } %>
+    <% end %>
+  </ul>
+
   <div class="actions">
     <%= f.submit %>
   </div>
